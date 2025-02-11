@@ -1,6 +1,7 @@
 'use client';
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,12 +16,17 @@ export default function Navbar() {
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="flex flex-1 items-center justify-start">
-              <div className="flex shrink-0 items-center">
+              {/* <div className="flex shrink-0 items-center"> */}
 
-                <div className="bg-gray-300 h-12 w-24">
-                  Logo
-                </div>
-              </div>
+                <Image
+                  src="/images/limco-logo.png"
+                  alt="Logo"
+                  width={100}
+                  height={100}
+                />
+
+
+              {/* </div> */}
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4 justify-end">
