@@ -33,7 +33,7 @@ import { MongoClient, MongoClientOptions } from 'mongodb';
 const url = process.env.MONGODB_URL;
 const options: MongoClientOptions = {
   tls: true,  // Ensures SSL/TLS connection
-  tlsAllowInvalidCertificates: false, // Set to true only for testing (not recommended for production)
+  tlsAllowInvalidCertificates: true, // Set to true only for testing (not recommended for production)
 }
 
 let client: MongoClient;
