@@ -38,7 +38,6 @@ if (!process.env.MONGODB_URL) {
 
 const options: MongoClientOptions = {
   tls: true,
-  tlsAllowInvalidCertificates: true // Only use this for testing, not in production
 };
 
 
